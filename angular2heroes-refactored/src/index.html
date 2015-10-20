@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Angular 2 Hero Demo</title>
+		<!-- Angular 2 -->
+		<script src="../node_modules/systemjs/dist/system.src.js"></script>
+		<script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+		<!-- Application Bootstrap -->
+		<script>
+			System.config({
+				packages: {
+					'app': {
+						defaultExtension: 'js'
+					}
+				}
+			});
+			
+			System.import('app/app');
+			//System.import('app/services/HeroesService');
+			// System.import('app/components/hero/hero');
+			// System.import('app/components/edit-hero/edit-hero');
+			// System.import('app/components/heroes/heroes');
+		</script>
+	</head>
+	<body>
+		<my-app>Loading...</my-app>
+	</body>
+</html>

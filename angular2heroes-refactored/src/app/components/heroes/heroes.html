@@ -1,0 +1,33 @@
+<style>
+	.heroes {
+		list-style-type: none;
+		margin-left: 1em;
+		padding: 0;
+		width: 10em;
+	}
+		.heroes li {
+			cursor: pointer;
+			position: relative;
+			left: 0;
+			transition: all 0.2s ease;
+		}
+		.heroes li:hover {
+			color: #369;
+			background-color: #EEE;
+			left: .2em;
+		}
+	.selected {
+		background-color: #EEE;
+		color: #369;
+	}
+</style>
+<h1>{{ title }}</h1>
+<h2>My Heroes</h2>
+<ul class="heroes">
+	<li *ng-for="#hero of heroes" (click)="onSelect(hero)" [ng-class]="getSelectedClass(hero)">
+		<hero [hero]="hero"></hero>
+	</li>
+</ul>
+<div *ng-if="selectedHero">
+	<edit-hero [hero]="selectedHero"></edit-hero>
+</div>

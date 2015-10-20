@@ -1,0 +1,22 @@
+{
+  "name": "angular2",
+  "version": "1.0.0",
+  "authors": [
+    "Nicholas J Trentacoste <ntrentacoste@v12groupinc.com>"
+  ],
+  "description": "Angular 2 learning",
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
