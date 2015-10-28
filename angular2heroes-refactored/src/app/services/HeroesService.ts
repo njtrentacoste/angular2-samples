@@ -1,10 +1,9 @@
-/// <reference path="../../../typings/angular2/angular2.d.ts" />
 interface Hero {
 	id: number;
 	name: string;
 }
 
-class HeroesService {
+export class HeroesService {
 	public heroes: Array<Hero>;
 	
 	constructor() {

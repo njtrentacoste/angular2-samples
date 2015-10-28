@@ -1,8 +1,7 @@
-/// <reference path="../../../../typings/angular2/angular2.d.ts" />
 import {Component, View, bootstrap, CORE_DIRECTIVES} from 'angular2/angular2';
-import {HeroesService} from 'app/services/HeroesService';
-import {HeroComponent} from 'app/components/hero/hero';
-import {EditHeroComponent} from 'app/components/edit-hero/edit-hero';
+import {HeroesService} from '../../services/HeroesService';
+import {HeroComponent} from '../hero/hero';
+import {EditHeroComponent} from '../edit-hero/edit-hero';
 
 interface Hero {
 	id: number;
@@ -36,5 +35,3 @@ export class HeroesComponent {
 		return { 'selected' : hero === this.selectedHero };
 	}
 }
-
-bootstrap(HeroesComponent, [HeroesService]);

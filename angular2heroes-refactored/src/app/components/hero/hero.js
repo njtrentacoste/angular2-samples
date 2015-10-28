@@ -9,7 +9,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/// <reference path="../../../../typings/angular2/angular2.d.ts" />
 var angular2_1 = require('angular2/angular2');
 var HeroComponent = (function () {
     function HeroComponent() {
@@ -27,5 +26,5 @@ var HeroComponent = (function () {
     return HeroComponent;
 })();
 exports.HeroComponent = HeroComponent;
-angular2_1.bootstrap(HeroComponent);
+//bootstrap(HeroComponent); 
 //# sourceMappingURL=hero.js.map

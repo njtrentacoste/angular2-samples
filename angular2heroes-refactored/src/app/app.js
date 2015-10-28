@@ -9,9 +9,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/// <reference path="../../typings/angular2/angular2.d.ts" />
 var angular2_1 = require('angular2/angular2');
-var heroes_1 = require('app/components/heroes/heroes');
+var heroes_1 = require('./components/heroes/heroes');
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -27,5 +26,5 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 })();
-angular2_1.bootstrap(AppComponent);
+exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.js.map

@@ -1,10 +1,10 @@
-/// <reference path="../../../typings/angular2/angular2.d.ts" />
 var HeroesService = (function () {
     function HeroesService() {
         this.heroes = HEROES;
     }
     return HeroesService;
 })();
+exports.HeroesService = HeroesService;
 var HEROES = [
     { id: 1, name: 'Superman' },
     { id: 2, name: 'Batman' },
