@@ -1,4 +1,6 @@
-import {Component, View, bootstrap, FORM_DIRECTIVES} from 'angular2/angular2';
+import {Component, View} from 'angular2/core';
+import {bootstrap} from 'angular2/bootstrap';
+import {FORM_DIRECTIVES} from 'angular2/common';
 
 interface Hero {
 	id: number;

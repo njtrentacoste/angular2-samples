@@ -1,0 +1,36 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Superman"
+    },
+    {
+      "id": 2,
+      "name": "Batman"
+    },
+    {
+      "id": 3,
+      "name": "WonderWoman"
+    },
+    {
+      "id": 4,
+      "name": "Supergirl"
+    },
+    {
+      "id": 5,
+      "name": "Flash"
+    },
+    {
+      "id": 6,
+      "name": "Aquaman"
+    },
+    {
+      "id": 7,
+      "name": "GreenLantern"
+    },
+    {
+      "id": 8,
+      "name": "MartianManhunter"
+    }
+  ]
+}
