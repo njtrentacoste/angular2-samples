@@ -4,3 +4,4 @@ _public/
 bundle-test.js
 bower_components/
 typings/
+npm-debug.log
