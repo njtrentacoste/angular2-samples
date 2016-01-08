@@ -2,18 +2,23 @@
 	<head>
 		<title>Angular 2 Hero Demo</title>
 		<!-- Angular 2 -->
-		<script src="../node_modules/systemjs/dist/system.src.js"></script>
-		<script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+		<script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
+        <script src="/node_modules/systemjs/dist/system.src.js"></script>
+        <script src="/node_modules/rxjs/bundles/Rx.js"></script>
+        <script src="/node_modules/angular2/bundles/angular2.dev.js"></script>
 		<!-- Application Bootstrap -->
 		<script>
 			System.config({
-				packages: { 'app': { defaultExtension: 'js' } }
+				baseURL: '/node_modules',
+                defaultJSExtensions: true,
+                warnings: true
 			});
 			
-			System.import('app/bootstrap');
+			System.import('./app/bootstrap')
+                .then(null, console.error.bind(console));
 		</script>
 	</head>
 	<body>
-		<my-app>Loading...</my-app>
+		<heroes-app>Loading...</heroes-app>
 	</body>
 </html>

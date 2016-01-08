@@ -24,10 +24,10 @@
 <h1>{{ title }}</h1>
 <h2>My Heroes</h2>
 <ul class="heroes">
-	<li *ng-for="#hero of heroes" (click)="onSelect(hero)" [ng-class]="getSelectedClass(hero)">
+	<li *ngFor="#hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
 		<hero [hero]="hero"></hero>
 	</li>
 </ul>
-<div *ng-if="selectedHero">
+<div *ngIf="selectedHero">
 	<edit-hero [hero]="selectedHero"></edit-hero>
 </div>
