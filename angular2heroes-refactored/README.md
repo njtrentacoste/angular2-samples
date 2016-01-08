@@ -6,7 +6,7 @@ To use this repo, clone it then
 
 `npm install`
 
-Open two command prompts
+Open three command prompts
 
 In the first:
 
@@ -15,5 +15,10 @@ In the first:
 
 In the second:
 
-`npm run start`
+`npm run data`
+(this spins up the json-server module which hosts the heroes.json file)
+
+In the third:
+
+`npm run web`
 (this spins up the live-server module which allows for hot reloading of your changes.)
