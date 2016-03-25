@@ -1,11 +1,11 @@
-System.register(['angular2/core', 'angular2/common', '../../services/heroes.service', '../hero/hero.component', '../edit-hero/edit-hero.component'], function(exports_1) {
+System.register(['angular2/core', 'angular2/common', '../../services/heroes.service', '../hero/hero.component', '../edit-hero/edit-hero.component'], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-        if (typeof Reflect === "object" && typeof Reflect.decorate === "function") return Reflect.decorate(decorators, target, key, desc);
-        switch (arguments.length) {
-            case 2: return decorators.reduceRight(function(o, d) { return (d && d(o)) || o; }, target);
-            case 3: return decorators.reduceRight(function(o, d) { return (d && d(target, key)), void 0; }, void 0);
-            case 4: return decorators.reduceRight(function(o, d) { return (d && d(target, key, o)) || o; }, desc);
-        }
+        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+        if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+        else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+        return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
@@ -31,13 +31,13 @@ System.register(['angular2/core', 'angular2/common', '../../services/heroes.serv
             }],
         execute: function() {
             HeroesComponent = (function () {
-                function HeroesComponent(_heroesService) {
-                    this._heroesService = _heroesService;
+                function HeroesComponent(heroesService) {
+                    this.heroesService = heroesService;
                     this.title = 'Tour of Heroes';
                 }
                 HeroesComponent.prototype.ngOnInit = function () {
                     var _this = this;
-                    this._heroesService.getHeroes()
+                    this.heroesService.getHeroes()
                         .subscribe(function (heroes) { return _this.heroes = heroes; });
                 };
                 HeroesComponent.prototype.onSelect = function (hero) {
@@ -46,16 +46,14 @@ System.register(['angular2/core', 'angular2/common', '../../services/heroes.serv
                 HeroesComponent = __decorate([
                     core_1.Component({
                         selector: 'heroes',
-                        providers: [heroes_service_1.HeroesService]
-                    }),
-                    core_1.View({
+                        providers: [heroes_service_1.HeroesService],
                         templateUrl: 'app/components/heroes/heroes.html',
                         directives: [common_1.CORE_DIRECTIVES, hero_component_1.HeroComponent, edit_hero_component_1.EditHeroComponent]
                     }), 
                     __metadata('design:paramtypes', [heroes_service_1.HeroesService])
                 ], HeroesComponent);
                 return HeroesComponent;
-            })();
+            }());
             exports_1("HeroesComponent", HeroesComponent);
         }
     }

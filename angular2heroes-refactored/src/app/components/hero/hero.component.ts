@@ -1,20 +1,12 @@
-import {Component, View} from 'angular2/core';
-import {bootstrap} from 'angular2/bootstrap'
-
-interface Hero {
-	id: number;
-	name: string;
-}
+import {Component, Input} from 'angular2/core';
+import {bootstrap} from 'angular2/bootstrap';
+import {Hero} from '../../models';
 
 @Component({
 	selector: 'hero',
-	properties: ['hero']
-})
-
-@View({
 	templateUrl: 'app/components/hero/hero.html'
 })
 
 export class HeroComponent {
-	public hero: Hero;
+	@Input() hero: Hero;
 }
